@@ -46,3 +46,13 @@ body, html {
         background-attachment: scroll;
     }
 }
+
+/*Work section: thumbnails*/
+.thumbnail_text {
+    color: rgb(255, 255, 255);
+}
+.thumbnail_img {
+  object-fit: cover;
+  width:230px;
+  height:230px;
+}
