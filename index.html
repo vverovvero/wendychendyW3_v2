@@ -88,7 +88,6 @@
     <h3 class="w3-center">REEL</h3>
     <p class="w3-center"><em>Winter 2016 Demo Reel.<br>Password: chendy</em></p>
     <div class="w3-center w3-row">
-      <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
       <div class='embed-container'><iframe src='https://player.vimeo.com/video/197571244' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
     </div>
   </div>
@@ -107,35 +106,35 @@
 
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="w3-row-padding w3-center">
-      <!-- Thumb 1 -->
+      <!-- Thumb 1: Disney -->
       <div class="w3-col m4 w3-display-container">
-        <img src="files/workThumbnails/tb_disney.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity thumbnail_img" alt="Disney">
+        <img src="files/workThumbnails/tb_disney.png" style="width:100%" onclick="onClick('modal01')" class="w3-hover-opacity thumbnail_img" alt="Disney">
         <div class="w3-display-middle w3-large thumbnail_text">DISNEY</div>
       </div>
-      <!-- Thumb 2-->
+      <!-- Thumb 2: Blue Sky-->
       <div class="w3-col m4 w3-display-container">
-        <img src="files/workThumbnails/tb_bluesky.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity thumbnail_img" alt="Blue Sky">
+        <img src="files/workThumbnails/tb_bluesky.png" style="width:100%" onclick="onClick('modal02')" class="w3-hover-opacity thumbnail_img" alt="Blue Sky">
         <div class="w3-display-middle w3-large thumbnail_text">BLUE SKY</div>
       </div>
-      <!-- Thumb 3 -->
+      <!-- Thumb 3: Where I'll Go and Looking Under -->
       <div class="w3-col m4 w3-display-container">
-        <img src="files/workThumbnails/tb_animation.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity thumbnail_img" alt="Where I'll Go">
+        <img src="files/workThumbnails/tb_animation.png" style="width:100%" onclick="onClick('modal03')" class="w3-hover-opacity thumbnail_img" alt="Where I'll Go">
         <div class="w3-display-middle w3-large thumbnail_text">WHERE I'LL GO</div>
       </div>
     </div>
 
     <div class="w3-row-padding w3-center w3-section">
-      <!-- Thumb 4 -->
+      <!-- Thumb 4: Don't Blink -->
       <div class="w3-col m4 w3-display-container">
         <img src="files/workThumbnails/tb_db.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity thumbnail_img" alt="Don't Blink">
         <div class="w3-display-middle w3-large thumbnail_text">DON'T BLINK</div>
       </div>
-      <!-- Thumb 5 -->
+      <!-- Thumb 5: mCertiKos -->
       <div class="w3-col m4 w3-display-container">
         <img src="files/workThumbnails/tb_os.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity thumbnail_img" alt="OS video mode">
         <div class="w3-display-middle w3-large thumbnail_text"><br>VIDEO<br>MODE<br>MCERTIKOS</div>
       </div>
-      <!-- Thumb 6 -->
+      <!-- Thumb 6: Ray Tracing and Path Tracing -->
       <div class="w3-col m4 w3-display-container">
         <img src="files/workThumbnails/tb_graphics.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity thumbnail_img" alt="Rendering">
         <div class="w3-display-middle w3-large thumbnail_text">RENDERING</div>
@@ -143,17 +142,17 @@
     </div>
 
     <div class="w3-row-padding w3-center w3-section">
-      <!-- Thumb 7 -->
+      <!-- Thumb 7: Distributed Graph -->
       <div class="w3-col m4 w3-display-container">
         <img src="files/workThumbnails/tb_graph.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity thumbnail_img" alt="Distributed Graph">
         <div class="w3-display-middle w3-large thumbnail_text">DISTRIBUTED GRAPH</div>
       </div>
-      <!-- Thumb 8 -->
+      <!-- Thumb 8: Painting -->
       <div class="w3-col m4 w3-display-container">
         <img src="files/workThumbnails/tb_painting.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity thumbnail_img" alt="Painting">
         <div class="w3-display-middle w3-large thumbnail_text">PAINTING</div>
       </div>
-      <!-- Thumb 9 -->
+      <!-- Thumb 9: Design -->
       <div class="w3-col m4 w3-display-container">
         <img src="files/workThumbnails/tb_design.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity thumbnail_img" alt="Design">
         <div class="w3-display-middle w3-large thumbnail_text">DESIGN</div>
@@ -161,7 +160,7 @@
     </div>  
 
     <div class="w3-row-padding w3-center w3-section w3-hide" id="gallery_row3">
-      <!-- Thumb 10 -->
+      <!-- Thumb 10: Photography  -->
       <div class="w3-col m4 w3-display-container">
         <img src="files/workThumbnails/tb_photo.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity thumbnail_img" alt="Photography">
         <div class="w3-display-middle w3-large thumbnail_text">PHOTOGRAPHY</div>
@@ -174,14 +173,56 @@
   </div>
 
   <!-- Modal for full size images on click-->
-  <!-- Modal 1 -->
-  <div id="modal01" class="w3-modal w3-white">
+  <!-- Modal 1: Disney -->
+  <div id="modal01" class="w3-modal w3-opacity-90 w3-white">
+    <div class="w3-content w3-container w3-padding-bottom-64 w3-opacity-off">
+      <span class="w3-closebtn w3-text-black w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image" onclick="closeModal('modal01')"><i class="fa fa-remove"></i></span>
+      <h3 class="w3-center">DISNEY</h3>
+      <p class="w3-center"><em>Selected shots, summer 2015.<br>Password: chendy</em></p>
+      <div class="w3-center w3-row">
+        <div class='embed-container w3-opacity-off w3-white'><iframe src='https://player.vimeo.com/video/197583926' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Blue Sky -->
+  <div id="modal02" class="w3-modal w3-opacity-90 w3-white">
+    <div class="w3-content w3-container w3-padding-bottom-64 w3-opacity-off">
+      <span class="w3-closebtn w3-text-black w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image" onclick="closeModal('modal02')"><i class="fa fa-remove"></i></span>
+      <h3 class="w3-center">BLUE SKY</h3>
+      <p class="w3-center"><em>Geometry reduction tool, summer 2016.<br>Deployed for production use, fall 2016.</em></p>
+      <div class="w3-center w3-row">
+        <div class='embed-container w3-opacity-off w3-white'><iframe src='https://player.vimeo.com/video/197583634' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Where I'll Go -->
+  <div id="modal03" class="w3-modal w3-opacity-90 w3-white">
+    <div class="w3-content w3-container w3-padding-bottom-64 w3-opacity-off">
+      <span class="w3-closebtn w3-text-black w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image" onclick="closeModal('modal03')"><i class="fa fa-remove"></i></span>
+      <h3 class="w3-center">WHERE I'LL GO</h3>
+      <p class="w3-center"><em>2D animation, winter 2015.<br> Focuses on environments, world-building, and atmosphere.</em></p>
+      <div class="w3-center w3-row">
+        <div class='embed-container w3-opacity-off w3-white'><iframe src='https://player.vimeo.com/video/153717699' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+      </div>
+      <br>
+      <h4 class="w3-center">REVISED ANIMATION TEST</h4>
+      <p class="w3-center"><em>Swimming animation test, winter 2015.<br> Set in the world from "Where I'll Go".</em></p>
+      <div class="w3-center w3-row">
+        <div class='embed-container w3-opacity-off w3-white'><iframe src='https://player.vimeo.com/video/153717864' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+      </div>
+    </div>
+  </div>  
+
+  <!-- Modal Demo -->
+<!--   <div id="modal01" class="w3-modal w3-white">
     <span class="w3-closebtn w3-text-black w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image" onclick="closeModal()"><i class="fa fa-remove"></i></span>
     <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
       <img id="img01" class="w3-image">
       <p id="caption" class="w3-opacity w3-large"></p>
     </div>
-  </div>
+  </div> -->
 
   <!-- Fourth Parallax Image with Resume Text -->
   <div class="bgimg-4 w3-display-container">
