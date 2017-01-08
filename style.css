@@ -56,7 +56,4 @@ body, html {
   width:230px;
   height:230px;
 }
-.img-hover-opacity:hover {
-    opacity: 0.6;
-    filter: alpha(opacity=60); /* For IE8 and earlier */
-}
+
