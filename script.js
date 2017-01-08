@@ -6,6 +6,10 @@ function onClick(element) {
   captionText.innerHTML = element.alt;
 }
 
+function closeModal(){
+  document.getElementById("modal01").style.display = "none";
+}
+
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
 function myFunction() {
