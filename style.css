@@ -74,9 +74,14 @@ body, html {
 }
 
 /*Work section: Modals*/
-.w3-opacity-90 {
-    opacity: 0.90;
+/*Opacity hack*/
+.w3-bg-alpha-90 {
+    background-color: rgba(255,255,255,0.9);
+}
+.w3-bg-alpha-100 {
+    background-color: rgba(255,255,255,1.0);
 }
 .w3-padding-bottom-64{
     padding-bottom:64px!important;
 }
+
