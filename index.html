@@ -126,12 +126,12 @@
     <div class="w3-row-padding w3-center w3-section">
       <!-- Thumb 4: Don't Blink -->
       <div class="w3-col m4 w3-display-container">
-        <img src="files/workThumbnails/tb_db.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity thumbnail_img" alt="Don't Blink">
+        <img src="files/workThumbnails/tb_db.png" style="width:100%" onclick="onClick('modal04')" class="w3-hover-opacity thumbnail_img" alt="Don't Blink">
         <div class="w3-display-middle w3-large thumbnail_text">DON'T BLINK</div>
       </div>
       <!-- Thumb 5: mCertiKos -->
       <div class="w3-col m4 w3-display-container">
-        <img src="files/workThumbnails/tb_os.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity thumbnail_img" alt="OS video mode">
+        <img src="files/workThumbnails/tb_os.png" style="width:100%" onclick="onClick('modal05')" class="w3-hover-opacity thumbnail_img" alt="OS video mode">
         <div class="w3-display-middle w3-large thumbnail_text"><br>VIDEO<br>MODE<br>MCERTIKOS</div>
       </div>
       <!-- Thumb 6: Ray Tracing and Path Tracing -->
@@ -144,7 +144,7 @@
     <div class="w3-row-padding w3-center w3-section">
       <!-- Thumb 7: Distributed Graph -->
       <div class="w3-col m4 w3-display-container">
-        <img src="files/workThumbnails/tb_graph.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity thumbnail_img" alt="Distributed Graph">
+        <img src="files/workThumbnails/tb_graph.png" style="width:100%" onclick="onClick('modal07')" class="w3-hover-opacity thumbnail_img" alt="Distributed Graph">
         <div class="w3-display-middle w3-large thumbnail_text">DISTRIBUTED GRAPH</div>
       </div>
       <!-- Thumb 8: Painting -->
@@ -214,6 +214,47 @@
       </div>
     </div>
   </div>  
+
+  <!-- Modal 4: Don't Blink -->
+  <div id="modal04" class="w3-modal w3-bg-alpha-90">
+    <div class="w3-content w3-container w3-padding-bottom-64 w3-opacity-off">
+      <span class="w3-closebtn w3-text-black w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image" onclick="closeModal('modal04')"><i class="fa fa-remove"></i></span>
+      <h3 class="w3-center">DON'T BLINK</h3>
+      <p class="w3-center"><em>Virtual Reality horror game, spring 2016.<br>For implementation details, please see the <b><a class="w3-hover-pink" href="https://vverovvero.github.io/CPSC-439-index/"> project documentation</a></b>.</em></p> 
+
+      <div class="w3-center w3-row">
+        <div class='embed-container w3-bg-alpha-100'><iframe src='https://player.vimeo.com/video/197707757' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Don't Blink -->
+  <div id="modal05" class="w3-modal w3-bg-alpha-90">
+    <div class="w3-content w3-container w3-padding-bottom-64 w3-opacity-off">
+      <span class="w3-closebtn w3-text-black w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image" onclick="closeModal('modal05')"><i class="fa fa-remove"></i></span>
+      <h3 class="w3-center">VIDEO MODE IN MCERTIKOS</h3>
+      <p class="w3-center"><em>Enabling video mode in mCertiKOS, fall 2016.<br>For implementation details, please see the <b><a class="w3-hover-pink" href="https://vverovvero.github.io/CPSC-422-index/"> project documentation</a></b>.</em></p> 
+
+      <div class="w3-center w3-row">
+        <div class='embed-container w3-bg-alpha-100'><iframe src='https://player.vimeo.com/video/197585376' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6: Rendering -->
+
+  <!-- Modal 7: Distributed Graph -->
+  <div id="modal07" class="w3-modal w3-bg-alpha-90">
+    <div class="w3-content w3-container w3-padding-bottom-64 w3-opacity-off">
+      <span class="w3-closebtn w3-text-black w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image" onclick="closeModal('modal07')"><i class="fa fa-remove"></i></span>
+      <h3 class="w3-center">DISTRIBUTED GRAPH</h3>
+      <p class="w3-center"><em>Four iterations of a graph store service, fall 2016.<br>For implementation details, please see the <b><a class="w3-hover-pink" href="https://vverovvero.github.io/CPSC-426-index/"> project documentation</a></b>.</em></p> 
+
+      <div class="w3-center w3-row">
+        <div class='embed-container w3-bg-alpha-100'><iframe src='https://player.vimeo.com/video/198164646' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+      </div>
+    </div>
+  </div>
 
   <!-- Modal Demo -->
 <!--   <div id="modal01" class="w3-modal w3-white">
