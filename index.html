@@ -49,7 +49,7 @@
   <!-- First Parallax Image with Logo Text -->
   <div class="bgimg-1 w3-display-container" id="home">
     <div class="w3-display-middle" style="white-space:nowrap;">
-      <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">VERSION</span> 14</span>
+      <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">VERSION</span> 15</span>
     </div>
   </div>
 
@@ -160,7 +160,7 @@
       </div>
     </div>  
 
-    <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-row-padding w3-center w3-section w3-hide" id="gallery_row3">
       <!-- Thumb 10 -->
       <div class="w3-col m4 w3-display-container">
         <img src="files/workThumbnails/tb_photo.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity thumbnail_img" alt="Photography">
@@ -169,7 +169,7 @@
     </div>
 
     <div class="w3-row-padding w3-center w3-section">
-    <button class="w3-btn w3-light-grey w3-padding-xlarge" style="margin-top:64px">LOAD MORE</button>
+    <button class="w3-btn w3-light-grey w3-padding-xlarge" id="gallery_button" onclick="toggleGallery()" style="margin-top:64px">SHOW MORE</button>
     </div>
   </div>
 

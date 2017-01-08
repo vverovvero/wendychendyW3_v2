@@ -30,3 +30,15 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
+// Used to toggle gallery; show more or show less
+function toggleGallery() {
+    var x = document.getElementById("gallery_row3");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className = x.className.replace(" w3-hide", " w3-show");
+        document.getElementById("gallery_button").innerHTML = "SHOW LESS";
+    } else {
+        x.className = x.className.replace(" w3-show", " w3-hide");
+        document.getElementById("gallery_button").innerHTML = "SHOW MORE";
+    }
+}
