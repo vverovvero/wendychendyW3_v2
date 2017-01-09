@@ -49,7 +49,7 @@
   <!-- First Parallax Image with Logo Text -->
   <div class="bgimg-1 w3-display-container" id="home">
     <div class="w3-display-middle" style="white-space:nowrap;">
-      <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">VERSION</span> 20</span>
+      <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">VERSION</span> 21</span>
     </div>
   </div>
 
@@ -101,7 +101,7 @@
 
   <!-- Container (WORK Section) -->
   <div class="w3-content w3-container w3-padding-64" id="work">
-    <h3 class="w3-center">MY WORK</h3>
+    <h3 class="w3-center">WORK</h3>
     <p class="w3-center"><em>My projects span the spectrum from coding to animating to painting.<br> Click on the images for more information.</em></p><br>
 
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
@@ -149,7 +149,7 @@
       </div>
       <!-- Thumb 8: Painting -->
       <div class="w3-col m4 w3-display-container">
-        <img src="files/workThumbnails/tb_painting.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity thumbnail_img" alt="Painting">
+        <img src="files/workThumbnails/tb_painting.png" style="width:100%" onclick="onClick('modal08')" class="w3-hover-opacity thumbnail_img" alt="Painting">
         <div class="w3-display-middle w3-large thumbnail_text">PAINTING</div>
       </div>
       <!-- Thumb 9: Design -->
@@ -303,6 +303,59 @@
   </div>
 
   <!-- Modals 8: Painting -->
+  <div id="modal08" class="w3-modal w3-bg-alpha-90">
+    <div class="w3-content w3-container w3-padding-bottom-64 w3-opacity-off">
+      <span class="w3-closebtn w3-text-black w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image" onclick="closeModal('modal08')"><i class="fa fa-remove"></i></span>
+      <h3 class="w3-center">PAINTING</h3>
+      <p class="w3-center">
+        <em>
+          Assorted paintings in acrylic and oil.<br>
+          Click image to expand.
+        </em>
+      </p> 
+
+      <div class="w3-center w3-row">
+        <div class="w3-row w3-gallery" style="margin-bottom:128px">
+          <div class="w3-third">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings/01.jpg" onclick="onClickLightbox(this)" alt="Portrait of my brother.">    
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings/03.jpg" onclick="onClickLightbox(this)" alt="Portrait of my mother.">  
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings_oil/mini2.jpg" onclick="onClickLightbox(this)" alt="Miniature self-portrait.">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings/07.jpg" onclick="onClickLightbox(this)" alt="Portrait of my father."> 
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings/09.jpg" onclick="onClickLightbox(this)" alt="Portrait of my maternal grandmother.">   
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings/11.jpg" onclick="onClickLightbox(this)" alt="Self-portrait.">    
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings/12.jpg" onclick="onClickLightbox(this)" alt="Portrait of my Michael Jackson.">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings/05.jpg" onclick="onClickLightbox(this)" alt="Portrait of my brother.">  
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings/13.jpg" onclick="onClickLightbox(this)" alt="Deconstruction of Caravaggio's 'Calling of Saint Matthew.'">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings_oil/floral2.jpg" onclick="onClickLightbox(this)" alt="Flowers in the light, 2.">
+          </div>
+
+          <div class="w3-third">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings_abstract/01.jpg" onclick="onClickLightbox(this)" alt="Master copy of Max Ernst's 'Paris Dream.'">  
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings/02.jpg" onclick="onClickLightbox(this)" alt="Portrait of my paternal grandmother.">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings/08.jpg" onclick="onClickLightbox(this)" alt="Portrait of my maternal grandfather.">  
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings_abstract/02.jpg" onclick="onClickLightbox(this)" alt="Pink and blue buildings inspired by Max Ernst's 'Paris Dream.'"> 
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings_oil/floral6.jpg" onclick="onClickLightbox(this)" alt="Flowers in the dark, 2.">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings_abstract/04.jpg" onclick="onClickLightbox(this)" alt="Floral spotlights inspired by Max Ernst's 'Paris Dream.'"> 
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings_abstract/05.jpg" onclick="onClickLightbox(this)" alt="Tree and mountains inspired by Max Ernst's 'Paris Dream.'"> 
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings/04.jpg" onclick="onClickLightbox(this)" alt="Self-portrait."> 
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings_oil/floral4.jpg" onclick="onClickLightbox(this)" alt="Flowers in the light, 4.">
+          </div>
+
+          <div class="w3-third">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings/10.jpg" onclick="onClickLightbox(this)" alt="Portrait of my headmaster."> 
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings_oil/mini1.jpg" onclick="onClickLightbox(this)" alt="Miniature portrait of a friend.  Hand for scale.">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings/06.jpg" onclick="onClickLightbox(this)" alt="Portrait of my father."> 
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings_oil/floral5.jpg" onclick="onClickLightbox(this)" alt="Flowers in the dark, 1.">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings_abstract/03.jpg" onclick="onClickLightbox(this)" alt="Floating library inspired by Max Ernst's 'Paris Dream.'"> 
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings_oil/floral7.jpg" onclick="onClickLightbox(this)" alt="Flowers in the dark, 3.">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings_oil/floral8.jpg" onclick="onClickLightbox(this)" alt="Flowers in the dark, 4.">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings_oil/floral1.jpg" onclick="onClickLightbox(this)" alt="Flowers in the light, 1.">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings_oil/floral3.jpg" onclick="onClickLightbox(this)" alt="Flowers in the light, 3.">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
   <!-- Modals 9: Design -->
   <!-- Modals 10: Photography -->
 
