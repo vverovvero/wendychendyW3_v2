@@ -20,19 +20,19 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url("files/backgrounds/png/bg1.png");
+    background-image: url("files/backgrounds/png/bg2.png");
     min-height: 100%;
 }
 
 /* Second image (REEL) */
 .bgimg-2 {
-    background-image: url("files/backgrounds/png/bg5.png");
+    background-image: url("files/backgrounds/png/bg18.png");
     min-height: 400px;
 }
 
 /* Third image (WORK) */
 .bgimg-3 {
-    background-image: url("files/backgrounds/png/bg7.png");
+    background-image: url("files/backgrounds/png/bg19.png");
     min-height: 400px;
 }
 
@@ -101,6 +101,31 @@ body, html {
 }
 .w3-gallery-image:hover {
     background-color: rgba(255,255,255,0.9);
+}
+
+/*Resume section*/
+.resume-border {
+    color:#757575!important;
+    border-color:#757575!important;
+    border:4px solid
+}
+div#splashPiggy{
+    width: 80%;
+}
+div#splashName{
+    font-family: "Lato", "Verdana";
+    font-weight: 900;
+    font-size: 24px;
+    /*white-space: nowrap;*/
+}
+div#splashTagLine{
+    font-family: "Sue Ellen Francisco", "Verdana";
+    font-size: 28px;
+    /*white-space: nowrap;*/
+}
+
+.resume-pig-icon{
+    width:20%;
 }
 
 
