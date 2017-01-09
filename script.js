@@ -1,4 +1,4 @@
-// Modal Image Gallery
+// Modal Gallery
 function onClick(modal_id) {
   // document.getElementById("img01").src = element.src;
   document.getElementById(modal_id).style.display = "block";
@@ -8,6 +8,18 @@ function onClick(modal_id) {
 
 function closeModal(modal_id){
   document.getElementById(modal_id).style.display = "none";
+}
+
+// Modal Image Lightbox
+function onClickLightbox(element) {
+  document.getElementById("modal_lightbox_img").src = element.src;
+  document.getElementById("modal_lightbox").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+function closeModalLightbox(){
+  document.getElementById("modal_lightbox").style.display = "none";
 }
 
 // Change style of navbar on scroll

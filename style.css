@@ -85,3 +85,17 @@ body, html {
     padding-bottom:64px!important;
 }
 
+
+/* Work section: Image lightbox Modal*/
+.w3-gallery{
+    margin-bottom:128px;
+}
+.w3-gallery-image{
+    width: 100%;
+    background-color: rgba(255,255,255,1.0);
+}
+.w3-gallery-image:hover {
+    background-color: rgba(255,255,255,0.9);
+}
+
+

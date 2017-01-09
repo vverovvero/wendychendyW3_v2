@@ -49,7 +49,7 @@
   <!-- First Parallax Image with Logo Text -->
   <div class="bgimg-1 w3-display-container" id="home">
     <div class="w3-display-middle" style="white-space:nowrap;">
-      <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">VERSION</span> 19</span>
+      <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">VERSION</span> 20</span>
     </div>
   </div>
 
@@ -136,7 +136,7 @@
       </div>
       <!-- Thumb 6: Ray Tracing and Path Tracing -->
       <div class="w3-col m4 w3-display-container">
-        <img src="files/workThumbnails/tb_graphics.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity thumbnail_img" alt="Rendering">
+        <img src="files/workThumbnails/tb_graphics.png" style="width:100%" onclick="onClick('modal06')" class="w3-hover-opacity thumbnail_img" alt="Rendering">
         <div class="w3-display-middle w3-large thumbnail_text">RENDERING</div>
       </div>
     </div>
@@ -242,6 +242,52 @@
   </div>
 
   <!-- Modal 6: Rendering -->
+  <div id="modal06" class="w3-modal w3-bg-alpha-90">
+    <div class="w3-content w3-container w3-padding-bottom-64 w3-opacity-off">
+      <span class="w3-closebtn w3-text-black w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image" onclick="closeModal('modal06')"><i class="fa fa-remove"></i></span>
+      <h3 class="w3-center">RENDERING</h3>
+      <p class="w3-center">
+        <em>
+          <a class="w3-hover-pink" href="https://vverovvero.github.io/CPSC-290-index/"> Accelerated ray tracer</a></b>, fall 2015. &nbsp
+          <a class="w3-hover-pink" href="https://vverovvero.github.io/CPSC-424-index/"> GPU ray tracer</a></b>, spring 2016. &nbsp
+          <a class="w3-hover-pink" href="https://vverovvero.github.io/cs490fa-index/"> Unidirectional path tracer</a></b>, fall 2016. <br>
+          Images shown below were produced from the above ray tracing and path tracing projects. <br>
+          Click image to expand.
+        </em>
+      </p> 
+
+      <div class="w3-center w3-row">
+        <div class="w3-row w3-gallery" style="margin-bottom:128px">
+          <div class="w3-third">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/raytracer_accelerated/buddha_01.jpg" onclick="onClickLightbox(this)" alt="Accelerated ray tracer.  Happy buddha, glossy red material.  100,010 triangles.">    
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/raytracer_accelerated/bunny_03.jpg" onclick="onClickLightbox(this)" alt="Accelerated ray tracer.  Stanford bunny, gold material.  69,676 triangles.">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/raytracer_accelerated/dragon_04.jpg" onclick="onClickLightbox(this)" alt="Accelerated ray tracer.  Stanford dragon, glass material.  100,016 triangles.">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/raytracer_accelerated/bunny_04.jpg" onclick="onClickLightbox(this)" alt="Accelerated ray tracer.  Stanford bunny, matte pink material.  69,676 triangles.">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/raytracer_accelerated/dragon_02.jpg" onclick="onClickLightbox(this)" alt="Accelerated ray tracer.  Stanford dragon, mirror material.  100,016 triangles.">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/raytracer_accelerated/buddha_03.jpg" onclick="onClickLightbox(this)" alt="Accelerated ray tracer.  Happy buddha, matte pink material.  100,010 triangles.">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/raytracer_accelerated/bunny_02.jpg" onclick="onClickLightbox(this)" alt="Accelerated ray tracer.  Stanford bunny, glass material.  69,676 triangles.">
+          </div>
+
+          <div class="w3-third">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/raytracer_accelerated/dragon_01.jpg" onclick="onClickLightbox(this)" alt="Accelerated ray tracer.  Stanford dragon, glossy green material.  100,016 triangles."> 
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/raytracer_accelerated/bunny_01.jpg" onclick="onClickLightbox(this)" alt="Accelerated ray tracer.  Stanford bunny, shiny aquamarine material.  69,676 triangles.">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/raytracer_accelerated/buddha_02.jpg" onclick="onClickLightbox(this)" alt="Accelerated ray tracer.  Happy buddha, glossy green material.  100,010 triangles.">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/raytracer_accelerated/dragon_03.jpg" onclick="onClickLightbox(this)" alt="Accelerated ray tracer.  Stanford dragon, glossy red material.  100,016 triangles.">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/raytracer_accelerated/bunny_05.jpg" onclick="onClickLightbox(this)" alt="Accelerated ray tracer.  Stanford bunny, shiny red material.  69,676 triangles.">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/pathtracer_uni/img_direct.jpg" onclick="onClickLightbox(this)" alt="Unidirectional path tracer: Direct lighting only.">
+          </div>
+
+          <div class="w3-third">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/pathtracer_uni/img_all.jpg" onclick="onClickLightbox(this)" alt="Unidirectional path tracer: All lighting (direct, indirect, russian roulette).">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/pathtracer_uni/img_indirect.jpg" onclick="onClickLightbox(this)" alt="Unidirectional path tracer: Indirect lighting and russian roulette only.">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/pathtracer_uni/img_noroulette.jpg" onclick="onClickLightbox(this)" alt="Unidirectional path tracer: Direct and indirect lighting, no russian roulette.">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/pathtracer_uni/img_fun1.jpg" onclick="onClickLightbox(this)" alt="Unidirectional path tracer: All lighting for scene with multi-colored lights.">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/pathtracer_uni/img_fun2.jpg" onclick="onClickLightbox(this)" alt="Unidirectional path tracer: All lighting for physically implausible scene with floating spheres, multi-colored lights.">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
 
   <!-- Modal 7: Distributed Graph -->
   <div id="modal07" class="w3-modal w3-bg-alpha-90">
@@ -256,14 +302,19 @@
     </div>
   </div>
 
-  <!-- Modal Demo -->
-<!--   <div id="modal01" class="w3-modal w3-white">
-    <span class="w3-closebtn w3-text-black w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image" onclick="closeModal()"><i class="fa fa-remove"></i></span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
+  <!-- Modals 8: Painting -->
+  <!-- Modals 9: Design -->
+  <!-- Modals 10: Photography -->
+
+  <!-- Modal Lightbox for single image -->
+  <div id="modal_lightbox" class="w3-modal w3-black" onclick="closeModalLightbox()">
+    <!-- <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image" ><i class="fa fa-remove"></i></span> -->
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-bottom-64">
+      <p class="w3-opacity w3-small"><em> Click anywhere to close image. </em> </p>
+      <img id="modal_lightbox_img" class="w3-image">
       <p id="caption" class="w3-opacity w3-large"></p>
     </div>
-  </div> -->
+  </div>
 
   <!-- Fourth Parallax Image with Resume Text -->
   <div class="bgimg-4 w3-display-container">
