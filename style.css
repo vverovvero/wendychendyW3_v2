@@ -10,6 +10,14 @@ body, html {
     width: 37px;
 }
 
+/*Logo at top*/
+.logo-border {
+    color:#fff!important;
+    border-color:#fff!important;
+    border:4px solid;
+    overflow:hidden;
+}
+
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     background-attachment: fixed;
@@ -107,7 +115,8 @@ body, html {
 .resume-border {
     color:#757575!important;
     border-color:#757575!important;
-    border:4px solid
+    border:4px solid;
+    overflow:hidden;
 }
 img#splashPiggy{
     width: 90%;
