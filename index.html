@@ -49,7 +49,7 @@
   <!-- First Parallax Image with Logo Text -->
   <div class="bgimg-1 w3-display-container" id="home">
     <div class="w3-display-middle" style="white-space:nowrap;">
-      <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">VERSION</span> 21</span>
+      <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">VERSION</span> 22</span>
     </div>
   </div>
 
@@ -154,7 +154,7 @@
       </div>
       <!-- Thumb 9: Design -->
       <div class="w3-col m4 w3-display-container">
-        <img src="files/workThumbnails/tb_design.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity thumbnail_img" alt="Design">
+        <img src="files/workThumbnails/tb_design.png" style="width:100%" onclick="onClick('modal09')" class="w3-hover-opacity thumbnail_img" alt="Design">
         <div class="w3-display-middle w3-large thumbnail_text">DESIGN</div>
       </div>
     </div>  
@@ -162,7 +162,7 @@
     <div class="w3-row-padding w3-center w3-section w3-hide" id="gallery_row3">
       <!-- Thumb 10: Photography  -->
       <div class="w3-col m4 w3-display-container">
-        <img src="files/workThumbnails/tb_photo.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity thumbnail_img" alt="Photography">
+        <img src="files/workThumbnails/tb_photo.png" style="width:100%" onclick="onClick('modal10')" class="w3-hover-opacity thumbnail_img" alt="Photography">
         <div class="w3-display-middle w3-large thumbnail_text">PHOTOGRAPHY</div>
       </div>
     </div>
@@ -285,6 +285,9 @@
             <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/pathtracer_uni/img_fun2.jpg" onclick="onClickLightbox(this)" alt="Unidirectional path tracer: All lighting for physically implausible scene with floating spheres, multi-colored lights.">
           </div>
         </div>
+        <div class="w3-row-padding w3-center w3-section">
+          <button class="w3-btn w3-dark-grey w3-padding-xlarge" id="gallery_button" onclick="closeModal('modal06')" style="margin-top:64px">CLOSE GALLERY</button>
+        </div>
       </div>
     </div>
   </div> 
@@ -353,11 +356,78 @@
             <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/projects/paintings_oil/floral3.jpg" onclick="onClickLightbox(this)" alt="Flowers in the light, 3.">
           </div>
         </div>
+        <div class="w3-row-padding w3-center w3-section">
+          <button class="w3-btn w3-dark-grey w3-padding-xlarge" id="gallery_button" onclick="closeModal('modal08')" style="margin-top:64px">CLOSE GALLERY</button>
+        </div>
       </div>
     </div>
   </div> 
-  <!-- Modals 9: Design -->
+
+  <!-- Modals 9: Design-->
+  <div id="modal09" class="w3-modal w3-bg-alpha-90">
+    <div class="w3-content w3-container w3-padding-bottom-64 w3-opacity-off">
+      <span class="w3-closebtn w3-text-black w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image" onclick="closeModal('modal09')"><i class="fa fa-remove"></i></span>
+      <h3 class="w3-center">DESIGN</h3>
+      <p class="w3-center">
+        <em>
+          Assorted posters.<br>
+          Click image to expand.
+        </em>
+      </p> 
+
+      <div class="w3-center w3-row">
+        <div class="w3-row w3-gallery" style="margin-bottom:128px">
+          <div class="w3-third">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/test.jpg" onclick="onClickLightbox(this)" alt="Test.">    
+          </div>
+
+          <div class="w3-third">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/test.jpg" onclick="onClickLightbox(this)" alt="Test">  
+          </div>
+
+          <div class="w3-third">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/test.jpg" onclick="onClickLightbox(this)" alt="test."> 
+          </div>
+        </div>
+        <div class="w3-row-padding w3-center w3-section">
+          <button class="w3-btn w3-dark-grey w3-padding-xlarge" id="gallery_button" onclick="closeModal('modal09')" style="margin-top:64px">CLOSE GALLERY</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+
   <!-- Modals 10: Photography -->
+  <div id="modal10" class="w3-modal w3-bg-alpha-90">
+    <div class="w3-content w3-container w3-padding-bottom-64 w3-opacity-off">
+      <span class="w3-closebtn w3-text-black w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image" onclick="closeModal('modal10')"><i class="fa fa-remove"></i></span>
+      <h3 class="w3-center">PHOTOGRAPHY</h3>
+      <p class="w3-center">
+        <em>
+          Assorted photographs.<br>
+          Click image to expand.
+        </em>
+      </p> 
+
+      <div class="w3-center w3-row">
+        <div class="w3-row w3-gallery" style="margin-bottom:128px">
+          <div class="w3-third">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/test.jpg" onclick="onClickLightbox(this)" alt="Test.">    
+          </div>
+
+          <div class="w3-third">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/test.jpg" onclick="onClickLightbox(this)" alt="Test">  
+          </div>
+
+          <div class="w3-third">
+            <img class= "w3-gallery-image w3-image w3-hover-opacity w3-padding-tiny" src="files/test.jpg" onclick="onClickLightbox(this)" alt="test."> 
+          </div>
+        </div>
+        <div class="w3-row-padding w3-center w3-section">
+          <button class="w3-btn w3-dark-grey w3-padding-xlarge" id="gallery_button" onclick="closeModal('modal10')" style="margin-top:64px">CLOSE GALLERY</button>
+        </div>
+      </div>
+    </div>
+  </div> 
 
   <!-- Modal Lightbox for single image -->
   <div id="modal_lightbox" class="w3-modal w3-black" onclick="closeModalLightbox()">
