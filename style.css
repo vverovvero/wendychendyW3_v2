@@ -5,6 +5,11 @@ body, html {
     line-height: 1.8;
 }
 
+/*Icon for nav bar*/
+.piggy-icon{
+    width: 37px;
+}
+
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     background-attachment: fixed;

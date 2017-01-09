@@ -22,16 +22,12 @@
           <i class="fa fa-bars"></i>
         </a>
       </li>
-      <li class="w3-left-align"><a href="#home">HOME</a></li>
+      <li class="w3-left-align w3-hide-large w3-hide-medium"><a href="#home"><img id="home_piggy" class="piggy-icon" src="files/icons/piggy_white.svg"></img></a></li>
+      <li class="w3-left-align w3-hide-small"><a href="#home">HOME</a></li>
       <li class="w3-hide-small"><a href="#about"><i class="fa fa-user"></i> ABOUT</a></li>
-      <li class="w3-hide-small"><a href="#reel"><i class="fa fa-th"></i> REEL</a></li>
+      <li class="w3-hide-small"><a href="#reel"><i class="fa fa-play"></i> REEL</a></li>
       <li class="w3-hide-small"><a href="#work"><i class="fa fa-th"></i> WORK</a></li>
-      <li class="w3-hide-small"><a href="#resume"><i class="fa fa-envelope"></i> RESUME</a></li>
-      <li class="w3-hide-small w3-right">
-        <a href="#" class="w3-hover-red">
-          <i class="fa fa-search"></i>
-        </a>
-      </li>
+      <li class="w3-hide-small"><a href="#resume"><i class="fa fa-file-text-o"></i> RESUME</a></li>
     </ul>
 
     <!-- Navbar on small screens -->
@@ -41,7 +37,6 @@
         <li><a href="#reel" onclick="toggleFunction()">REEL</a></li>
         <li><a href="#work" onclick="toggleFunction()">WORK</a></li>
         <li><a href="#resume" onclick="toggleFunction()">RESUME</a></li>
-        <li><a href="#">SEARCH</a></li>
       </ul>
     </div>
   </div>
@@ -49,7 +44,7 @@
   <!-- First Parallax Image with Logo Text -->
   <div class="bgimg-1 w3-display-container" id="home">
     <div class="w3-display-middle" style="white-space:nowrap;">
-      <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">VERSION</span> 24</span>
+      <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">VERSION</span> 25</span>
     </div>
   </div>
 
@@ -487,30 +482,10 @@
 
     <div class="w3-row w3-padding-32 w3-section">
       <div class="w3-col m4 w3-container">
-        <!-- Add Google Maps -->
-        <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+        <p> Filler image </p>
       </div>
       <div class="w3-col m8 w3-container w3-section">
-        <div class="w3-large w3-margin-bottom">
-          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
-        </div>
-        <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-        <form action="form.asp" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-btn w3-black w3-right w3-padding w3-section" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-        </form>
+        <p> Filler text </p>
       </div>
     </div>
   </div>
@@ -528,34 +503,5 @@
     </div>
     <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
   </footer>
-   
-  <!-- Add Google Maps -->
-  <script src="https://maps.googleapis.com/maps/api/js"></script>
-  <script>
-  <!-- Google Map Location -->
-  var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-
-  function initialize() {
-  var mapProp = {
-    center: myCenter,
-    zoom: 12,
-    scrollwheel: false,
-    draggable: false,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-
-  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-
-  marker.setMap(map);
-  }
-
-  google.maps.event.addDomListener(window, 'load', initialize);
-
-  </script>
-
   </body>
 </html>
