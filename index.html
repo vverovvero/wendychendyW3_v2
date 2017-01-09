@@ -45,7 +45,7 @@
   <!-- First Parallax Image with Logo Text -->
   <div class="bgimg-1 w3-display-container" id="home">
     <div class="w3-display-middle" style="white-space:nowrap;">
-      <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">VERSION</span>27</span>
+      <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">VERSION</span>28</span>
     </div>
   </div>
 
@@ -482,30 +482,41 @@
     </div>
 
     <div class="w3-row w3-padding-32 w3-section">
+      <!-- Left Column -->
       <div class="w3-third">
+        <!-- Splash box -->
         <div class="w3-row w3-padding-large resume-border w3-margin">
-          <div class="w3-center w3-container w3-padding-medium">
+          <!-- Splash box for large, medium screen -->
+          <div class="w3-center w3-container w3-padding-medium w3-hide-small">
             <img id="splashPiggy" src="files/icons/piggy_grey.svg"></img>
             <div id="splashName">WENDY CHEN</div>
-            <div id="splashTagLine">PICTURES & CODE</div>
+            <div id="splashTagLine" class="w3-hide-medium">PICTURES & CODE</div>
+          </div>
+          <!-- Splash box for small screen -->
+          <div class="w3-center w3-container w3-hide-medium w3-hide-large">
+             <span class="w3-center w3-xlarge w3-wide"><h2>WENDY CHEN</h2></span>
           </div>
         </div>
+        <!-- Contact box -->
         <div class="w3-row w3-padding-medium resume-border w3-margin">
-          <div class="w3-row">
-
-            <h2> Contact </h2>
-          </div>
+            <h2 class="w3-text-grey w3-padding-16"><img class="resume-pig-icon" style="width:65px" src="files/icons/piggy_sunglasses_pink.svg"></img>&nbsp Contact</h2>
         </div>
+        <!-- Skills box -->
         <div class="w3-row w3-padding-medium resume-border w3-margin">
-          <p> Skills </p>
+          <h2 class="w3-text-grey w3-padding-16"><img class="resume-pig-icon" style="width:55px" src="files/icons/piggy_bowtie_pink.svg"></img>&nbsp Skills</h2>
         </div>
       </div>
+
+      <!-- Right Column -->
       <div class="w3-twothird">
+        <!-- Education box -->
         <div class="w3-row w3-padding-medium resume-border w3-margin">
-          <p> Education </p>
+          <h2 class="w3-text-grey w3-padding-16"><img class="resume-pig-icon" style="width:60px" src="files/icons/piggy_cowboy_pink.svg"></img>&nbsp Education</h2>
+
         </div>
+        <!-- Experience box -->
         <div class="w3-row w3-padding-medium resume-border w3-margin">
-          <p> Experience </p>
+          <h2 class="w3-text-grey w3-padding-16"><img class="resume-pig-icon" style="width:70px" src="files/icons/piggy_mickey_pink.svg"></img>&nbsp Experience</h2>
         </div>
       </div>
     </div>
